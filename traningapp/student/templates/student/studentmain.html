@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Main Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(#7db8dfd3, #277cae, hsla(216, 91%, 46%, 0.658), #033c63);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            width: 90%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #444;
+            font-weight: 600;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            display: block;
+            margin: 15px 0;
+            padding: 12px 25px;
+            font-size: 1.25rem;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+        }
+
+        a:active {
+            transform: scale(1);
+        }
+
+        .courses {
+            background-color: #3498db;
+        }
+
+        .doubts {
+            background-color: #2e53cc;
+        }
+
+        .resources {
+            background-color: #3c80e7bd;
+        }
+
+        .feedback {
+            background-color: #3366f3;
+        }
+
+        a:hover.courses {
+            background-color: #2980b9;
+        }
+
+        a:hover.doubts {
+            background-color: #277cae;
+        }
+
+        a:hover.modules {
+            background-color: #6167af;
+        }
+
+        a:hover.feedback {
+            background-color: #033c63;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome Student</h1>
+    <a href="/view/" class="courses">View Courses</a>
+    <a href="/doubts/" class="doubts">Add Doubts</a>
+    <a href="/viewmodule/" class="modules">View Modules</a>
+    <a href="/feedback/" class="feedback">Add Feedback</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 110%;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        table td {
+            padding: 15px 20px;
+            text-align: left;
+            font-size: 16px;
+            color: #333;
+        }
+
+        table td input[type="text"] {
+            width: 100%;
+            padding: 8px 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table td button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            text-transform: uppercase;
+        }
+
+        table td button:hover {
+            background-color: #0056b3;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        table tr:last-child td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <table align="center">
+        <tr>
+            <td>Student Name</td>
+            <td><input type="text" name="std"></td>
+        </tr>
+        <tr>
+            <td>Doubts</td>
+            <td><input type="text" name="dut"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Add</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

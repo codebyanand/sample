@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Module</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            width: 80%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px 15px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        center {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <table>
+
+        <tr>
+            <td>course name</td>
+            <td><input type="text" name="course" placeholder="course name"></td>
+        </tr>
+
+
+        <tr>
+            <td>Add Module</td>
+            <td><input type="text" name="module" placeholder=" module name"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center><button type="submit">Add</button></center>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
